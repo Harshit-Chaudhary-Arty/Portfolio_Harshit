@@ -1,0 +1,59 @@
+@font-face {
+    font-family:display ;
+    src: url(display.ttf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    font-family: display;
+}
+
+#loader{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    color: #fff;
+    font-size: 2.5vw;
+    text-align: center;
+    position: relative;
+    display: flex;
+    
+}
+
+#loader h1{
+    position: absolute;
+        transform: translate(-50%,-50%);
+        top: 45%;
+        left: 50%;
+}
+
+#loader h2{
+    font-size: 1.2vw;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 90%;
+    left: 50%;
+    font-weight: 200;
+    color: #6a6a6a;
+    
+}
+
+
+
+@media screen and (max-width:648px) {
+    #loader h1{
+        position: absolute;
+        transform: translate(-50%,-50%);
+        top: 40%;
+        left: 50%;
+        font-size: 6vh;
+        width: 100vw;
+    }
+}
