@@ -27,9 +27,21 @@ tl.to("#loader",{
     delay:0,
 })
 
-tl.from("#page1 #nav #nleft, #page1 #nav #nright",{
+tl.from("#nav,#nav #nleft,#nav #nright a",{
     opacity:0,
     y:-50,
-    stagger,
-    duration:1,
+    stagger: 0.2,
+    duration:0.5,
+    delay:0,
+    filter: "blur(10px)",
+
+})
+tl.from(" #wrapper1 h1,#wrapper1 h2,#wrapper1 #spanh2",{
+    opacity:0,
+    y:-50,
+    stagger: 0.3,
+    duration:0.7,
+    delay:-0.8,
+    filter: "blur(10px)",
+
 })
