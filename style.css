@@ -13,6 +13,7 @@ html , body{
     height: 100%;
     width: 100%;
     font-family: display;
+    overflow: hidden;
 }
 
 #loader{
@@ -22,8 +23,9 @@ html , body{
     color: #fff;
     font-size: 2.5vw;
     text-align: center;
-    position: relative;
+    position: fixed;
     display: flex;
+    z-index: 5;
     
 }
 
@@ -45,7 +47,90 @@ html , body{
     
 }
 
+.page{
+    width: 100vw;
+    height: 100vh;
+    /* margin-top: 5vh; */
+    
+}
 
+#page1 #wrapper1 h1{
+    font-size: 8.5vw;
+}
+
+#page1 #nav{
+    height: 10vh;
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    border-bottom: 2px solid rgb(176, 176, 176);
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+#nav #nleft{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* margin: 0 5%; */
+}
+
+#nav #nright{
+    /* padding: 0 5%; */
+    display: inline-block;
+    /* background-color: blue; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 35%;
+}
+
+
+#nav #nright a{
+    color: black;
+    font-size: 1.2vw;
+    text-decoration: none;
+}
+#nav #nright i{
+    color: black;
+    font-size: 1.5vw;
+    text-decoration: none;
+}
+
+#page1 #wrap{
+    /* background-color: red; */
+    margin: 3.5% 5%;
+}
+
+#wrapper1{
+    width: 60%;
+}
+#wrapper1 h2{
+    margin-top: 3%;
+    font-weight: 300;
+    font-size: 3.8vh;
+}
+
+.pill{
+    border-radius: 50px;
+    font-size: 3.5vh;
+    padding: 15px 25px;
+    margin-right:10px;
+}
+
+#pill1{
+    background-color: rgb(181, 255, 70);
+}
+
+#pill2{
+    background-color: rgb(169, 141, 255);
+}
+
+#spanh2{
+    margin-top: 5.5%;
+}
 
 @media screen and (max-width:648px) {
     #loader h1{
@@ -57,3 +142,4 @@ html , body{
         width: 100vw;
     }
 }
+
