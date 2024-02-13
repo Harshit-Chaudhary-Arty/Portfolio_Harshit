@@ -58,6 +58,11 @@ html , body{
     font-size: 8.5vw;
 }
 
+
+
+
+
+
 #page1 #nav{
     height: 10vh;
     width: 100%;
@@ -67,6 +72,7 @@ html , body{
     align-items: center;
     justify-content: space-between;
     padding: 0 5%;
+    z-index: 200;
 }
 
 #nav #nleft{
@@ -103,6 +109,43 @@ html , body{
     /* background-color: red; */
     margin: 3.5% 5%;
 }
+
+.overlay{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    clip-path: circle(100px at var(--x, 50%) var(--y, 50%));
+    transition: clip-path 150ms;
+    opacity: 0;
+}
+
+#nav #nrighto a{
+    color: white;
+    font-size: 1.2vw;
+    text-decoration: none;
+}
+#nav #nrighto{
+    /* padding: 0 5%; */
+    display: inline-block;
+    /* background-color: blue; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 35%;
+}
+
+.overlay #pillo1{
+            
+            background-color:#f234c6 ;
+}
+
+#pillo2{
+    background-color: #22adf8;
+}
+
 
 #wrapper1{
     width: 60%;
