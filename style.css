@@ -50,7 +50,7 @@ html , body{
 .page{
     width: 100vw;
     height: 100vh;
-    /* margin-top: 5vh; */
+    margin:0;
     
 }
 
@@ -175,7 +175,7 @@ html , body{
     margin-top: 5.5%;
 }
 
-@media screen and (max-width:648px) {
+@media screen and (max-width:720px) {
     #loader h1{
         position: absolute;
         transform: translate(-50%,-50%);
@@ -184,5 +184,67 @@ html , body{
         font-size: 6vh;
         width: 100vw;
     }
+
+    #loader h2{
+        font-size: 2.7vh;
+        
+    }
+
+    #nav #nright a{
+        display: none;
+    }
+
+    #nav #nleft{
+        font-size: 1.5vh;
+    }
+
+    #nav #nright{
+        display: flex;
+       justify-content: flex-end;
+    }
+
+    #nav #nright i{
+        font-size: 2vh;
+        
+    }
+
+    #wrapper1{
+        width: 100%;
+        align-items: center;
+    }
+
+    #wrap #wrapper1 h1{
+        font-size: 8vh;
+        text-align: center;
+    }
+
+    #wrap #wrapper1 h2{
+        margin-top: 5%;
+        font-weight: 300;
+        font-size: 3.4vh;
+        text-align: center;
+    }
+
+    #page1 #wrap{
+        /* background-color: red; */
+        margin: 8.5% ;
+    }
+
+    .pill{
+        border-radius: 50px;
+        font-size: 100%;
+        padding: 2% 4%;
+        margin-right:2%;
+        text-align: center;
+    }
+
+    #spanh2{
+        margin-top: 8.5%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+
 }
 
