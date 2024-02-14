@@ -21,11 +21,12 @@ html , body{
     width:2.5vh;
     border-radius: 50%;
     position: fixed;
-    z-index: 1000;
+    z-index: 2;
     background-color: black;
     display: flex;
     align-self: center;
     flex-wrap: wrap;
+
     
 }
 
@@ -34,7 +35,8 @@ html , body{
     position: absolute;
     transform: translate(-50%,-50%);
     left: 50%;
-    top:50%
+    top:50%;
+    opacity:0;
 
 }
 
@@ -129,7 +131,7 @@ html , body{
 
 
 
-.overlay{
+/* .overlay{
     position: absolute;
     top: 0%;
     left: 0%;
@@ -139,7 +141,7 @@ html , body{
     transition: clip-path 150ms;
     opacity: 0;
     z-index: 400;
-}
+} */
 
 #nav #nrighto a{
     color: white;
@@ -195,8 +197,40 @@ html , body{
 }
 
 #pill1{
-    background-color: rgb(181, 255, 70);
-}
+    background-color: rgb(181, 255, 70);      background: linear-gradient(110deg,   #2b1de8,#1ddde8, #dd00f3, #dd00f3, #490079);
+  
+       background-size: 200% 200%;
+     
+        -webkit-animation: rainbow 10s ease infinite;
+             -z-animation: rainbow 10s ease infinite;
+             -o-animation: rainbow 10s ease infinite;
+                animation: rainbow 10s ease infinite;
+     
+       }
+      
+     
+     @-webkit-keyframes rainbow {
+         0%{background-position:0% 82%}
+         50%{background-position:100% 19%}
+         100%{background-position:0% 82%}
+     }
+     @-moz-keyframes rainbow {
+         0%{background-position:0% 82%}
+         50%{background-position:100% 19%}
+         100%{background-position:0% 82%}
+     }
+     @-o-keyframes rainbow {
+         0%{background-position:0% 82%}
+         50%{background-position:100% 19%}
+         100%{background-position:0% 82%}
+     }
+     @keyframes rainbow { 
+         0%{background-position:0% 82%}
+         50%{background-position:100% 19%}
+       100%{background-position:0% 82%}  
+     
+     }
+
 
 #pill2{
     background-color: rgb(169, 141, 255);
@@ -227,7 +261,7 @@ html , body{
     position: relative;
     height: 12vh;
     overflow: hidden;
-    /* z-index: 500; */
+    z-index: 500;
 
     /* background-color: red; */
 }
@@ -235,6 +269,7 @@ html , body{
 .elem a{
     color: black;
     text-decoration: none;
+    z-index: 100;
 }
 
 #wrapper2 h1{
@@ -269,7 +304,7 @@ html , body{
 .elem .overlay2{
     width: 100%;
     height: 12vh;
-    z-index: -5;
+    z-index: -2;
     background-color: rgb(187, 253, 120);
     position: absolute;
     height: 12vh;
@@ -395,4 +430,50 @@ html , body{
 #page2{
     height: 100vh;
     width: 100vw;
+    position: relative;
+    border-top: 1px solid rgb(153, 153, 153) ;
+}
+
+#page2 h1{
+    font-size: 12vh;
+    position: absolute;
+    transform: translateX(-50%);
+    top: 10%;
+    left: 50%;
+    /* margin-top: 5%; */
+}
+
+
+@keyframes infinitescroll{
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+#loop2 img{
+    height: 65vh;
+    position: relative;
+    transform: translateX(-50%);
+    top: -50%;
+    left: 50%;
+}
+
+#loop2{
+    display: flex;
+    /* width: 100vw; */
+    height: 40vh;
+    /* background-color: red; */
+    /* overflow: hidden; */
+    animation-name: infinitescroll;
+    animation-duration: 40s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    padding: -10% -10%;
+    position: absolute;
+    bottom: 0%;
+    /* background-color: yellowgreen; */
+    /* z-index: 200; */
 }

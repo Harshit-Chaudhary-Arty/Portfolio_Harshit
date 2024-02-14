@@ -48,7 +48,7 @@ tl.from(" #wrapper1 h1,#wrapper1 h2,#wrapper1 #spanh2",{
 
 
 function videoconAnimation(){
-    var videocon= document.querySelector("body #page1")
+    var videocon= document.querySelector("body")
     var pointer= document.querySelector("#pointer ")
     videocon.addEventListener("mouseenter",function(){
       gsap.to(pointer,{
@@ -59,8 +59,8 @@ function videoconAnimation(){
     })
     videocon.addEventListener("mousemove",function(dets){
       gsap.to(pointer,{
-          left:dets.x,
-          top:dets.y,
+          left:dets.x+20,
+          top:dets.y+30,
       })
     })
 
@@ -71,16 +71,37 @@ function videoconAnimation(){
     //     })
     // })
 
-    // var videocon= document.querySelector("body #page1 #wrapper1")
-    // var pointer= document.querySelector("#pointer ")
-    // videocon.addEventListener("mouseenter",function(){
-    //     gsap.to(pointer,{
-    //         scale:4,
-    //         opacity:1,
+    var videocon= document.querySelector("body #page1 #wrapper2")
+    var pointer= document.querySelector("#pointer ")
+    var pointer2= document.querySelector("#pointer i ")
+    videocon.addEventListener("mouseenter",function(){
+        gsap.to(pointer,{
+            scale:4,
+            opacity:1,
 
-    //     })
+        })
+        gsap.to(pointer2,{
+          
+          opacity:1,
 
-    // })
+      })
+
+    })
+    var videocon= document.querySelector("body #page1 #wrapper2")
+    var pointer= document.querySelector("#pointer ")
+    videocon.addEventListener("mouseleave",function(){
+        gsap.to(pointer,{
+            scale:1,
+            opacity:1,
+
+        })
+        gsap.to(pointer2,{
+          
+          opacity:0,
+
+      })
+
+    })
 
 
     }
