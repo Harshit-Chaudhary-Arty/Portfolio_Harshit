@@ -47,77 +47,77 @@ tl.from(" #wrapper1 h1,#wrapper1 h2,#wrapper1 #spanh2",{
 })
 
 
-// function videoconAnimation(){
-//     var videocon= document.querySelector("body #page1")
-//     var pointer= document.querySelector("#pointer ")
-//     videocon.addEventListener("mouseenter",function(){
-//       gsap.to(pointer,{
-//           scale:0.7,
-//           opacity:1
-//       })
+function videoconAnimation(){
+    var videocon= document.querySelector("body #page1")
+    var pointer= document.querySelector("#pointer ")
+    videocon.addEventListener("mouseenter",function(){
+      gsap.to(pointer,{
+          scale:1,
+          opacity:1
+      })
     
-//     })
-//     videocon.addEventListener("mousemove",function(dets){
-//       gsap.to(pointer,{
-//           left:dets.x,
-//           top:dets.y,
-//       })
-//     })
+    })
+    videocon.addEventListener("mousemove",function(dets){
+      gsap.to(pointer,{
+          left:dets.x,
+          top:dets.y,
+      })
+    })
 
-//     videocon.addEventListener("mouseleave",function(){
-//         gsap.to(pointer,{
-//             scale:0.7,
+    // videocon.addEventListener("mouseleave",function(){
+    //     gsap.to(pointer,{
+    //         scale:0.7,
+    //         opacity:1
+    //     })
+    // })
+
+    // var videocon= document.querySelector("body #page1 #wrapper1")
+    // var pointer= document.querySelector("#pointer ")
+    // videocon.addEventListener("mouseenter",function(){
+    //     gsap.to(pointer,{
+    //         scale:4,
+    //         opacity:1,
+
+    //     })
+
+    // })
+
+
+    }
+    videoconAnimation()
+
+
+
+// function overlaypointer(){
+//     const span = document.querySelector('.hover-btn2')
+//     const overlay = document.querySelector('.overlay')
+
+//     window.addEventListener('mousemove', (e) => {
+//         const { clientX, clientY } = e;
+//         const x = Math.round((clientX / window.innerWidth) * 100);
+//         const y = Math.round((clientY / window.innerHeight) * 100);
+
+//         gsap.to(overlay, {
+//             '--x': `${x}%`,
+//             '--y': `${y}%`,
+//             duration: 0.3,
+//             ease: 'sine.out',
 //             opacity:1
 //         })
 //     })
+// }
 
-//     var videocon= document.querySelector("body #page1 #wrapper1")
-//     var pointer= document.querySelector("#pointer ")
+//     var videocon= document.querySelector("#page1")
+//     // var pointer= document.querySelector("#pointer ")
 //     videocon.addEventListener("mouseenter",function(){
-//         gsap.to(pointer,{
-//             scale:4,
-//             opacity:1,
-
-//         })
-
+//       overlaypointer()
 //     })
-
-
-//     }
-//     videoconAnimation()
-
-
-
-function overlaypointer(){
-    const span = document.querySelector('.hover-btn2')
-    const overlay = document.querySelector('.overlay')
-
-    window.addEventListener('mousemove', (e) => {
-        const { clientX, clientY } = e;
-        const x = Math.round((clientX / window.innerWidth) * 100);
-        const y = Math.round((clientY / window.innerHeight) * 100);
-
-        gsap.to(overlay, {
-            '--x': `${x}%`,
-            '--y': `${y}%`,
-            duration: 0.3,
-            ease: 'sine.out',
-            opacity:1
-        })
-    })
-}
-
-    var videocon= document.querySelector("#page1")
-    // var pointer= document.querySelector("#pointer ")
-    videocon.addEventListener("mouseenter",function(){
-      overlaypointer()
-    })
-    const overlay = document.querySelector('.overlay')
-    videocon.addEventListener("mouseleave",function(){
-      gsap.to(overlay,{
-        opacity:0
-      })
-    })
+//     const overlay = document.querySelector('.overlay')
+//     videocon.addEventListener("mouseleave",function(){
+//       gsap.to(overlay,{
+//         opacity:0
+//       })
+//     })
 
 
   
