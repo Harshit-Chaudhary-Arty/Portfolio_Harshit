@@ -344,7 +344,7 @@ html , body{
 
     .pill{
         border-radius: 50px;
-        font-size: 100%;
+        font-size: 90%;
         padding: 2% 4%;
         margin-right:2%;
         text-align: center;
@@ -380,7 +380,9 @@ html , body{
        display: none;
     }
 
-
+    #pointer{
+        display: none;
+    }
 
 
 }
