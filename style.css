@@ -300,6 +300,10 @@ html , body{
         
     }
 
+    #page1 #nav{
+        height: 7vh;
+    }
+
     #nav #nright a{
         display: none;
     }
