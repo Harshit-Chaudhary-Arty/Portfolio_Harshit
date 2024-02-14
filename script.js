@@ -120,7 +120,14 @@ function videoconAnimation(){
 //     })
 
 
-  
+  tl.from("#wrapper2 ,#wrapper2 .elem",{
+    opacity:0,
+    y:-50,
+    stagger: 0.2,
+    duration:0.7,
+    delay:-0.8,
+    filter: "blur(10px)",
+  })
    
 
        

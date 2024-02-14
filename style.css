@@ -85,7 +85,7 @@ html , body{
 
 
 #page1 #nav{
-    height: 10vh;
+    height: 13vh;
     width: 100%;
     flex-wrap: wrap;
     display: flex;
@@ -94,6 +94,7 @@ html , body{
     justify-content: space-between;
     padding: 0 5%;
     z-index: 200;
+    
 }
 
 #nav #nleft{
@@ -111,7 +112,7 @@ html , body{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    width: 35%;
+    width: 33%;
 }
 
 
