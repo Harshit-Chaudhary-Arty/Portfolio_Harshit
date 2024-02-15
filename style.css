@@ -381,6 +381,37 @@ html , body{
 }
 
 
+
+
+#page3{
+    min-height: 100vh;
+    width: 100vw;
+    /* background-color: black; */
+}
+
+#wrapper3{
+    margin:0 5%;
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: red; */
+    position: relative;
+}
+
+.tsh{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 1%;
+    flex-wrap: wrap;
+}
+.tsh img{
+    width: 24%;
+    border: 1px solid rgb(186, 186, 186);
+    border-radius: 10px;
+}
+
+
 @media screen and (max-width:720px) {
     #loader h1{
         position: absolute;
@@ -503,32 +534,27 @@ html , body{
        
     }
 
-}
+    #loop2 img{
+        height: 45vh;
+        /* position: relative;
+        transform: translateX(-50%);
+        top: -50%;
+        left: 50%; */
+    }
+
+    #loop2{
+        display: flex;
+        
+        height: 65vh;
+        position: absolute;
+        bottom: 1%;
+        overflow-y: hidden;
+      
+    }
+
+    .tsh img{
+        width: 46%;
+    }
 
 
-#page3{
-    min-height: 100vh;
-    width: 100vw;
-    /* background-color: black; */
-}
-
-#wrapper3{
-    margin:0 5%;
-    display: flex;
-    flex-wrap: wrap;
-    /* background-color: red; */
-    position: relative;
-}
-
-.tsh{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-top: 1%;
-}
-.tsh img{
-    width: 24%;
-    border: 1px solid rgb(186, 186, 186);
-    border-radius: 10px;
 }
