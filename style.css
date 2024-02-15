@@ -130,9 +130,11 @@ html , body{
     text-decoration: none;
 }
 #nav #nright i{
+    
     color: black;
     font-size: 1.5vw;
     text-decoration: none;
+    
 }
 
 
@@ -149,34 +151,47 @@ html , body{
     z-index: 400;
 } */
 
-#nav #nrighto a{
-    color: white;
-    font-size: 1.2vw;
-    text-decoration: none;
-}
-#nav #nrighto{
-    /* padding: 0 5%; */
-    display: inline-block;
-    /* background-color: blue; */
+
+
+
+#navmenu{
+    color: black;
+    background-color: #CCEF92;
+    height: 100vh;
+    font-size: 10vh;
+    /* font-stretch: 600%; */
+    width: 40vw;
+    position: fixed;
+    top: 0%;
+    left: 100%;
+    text-align: right;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    width: 35%;
+    flex-direction: column;
+    padding-top: 7%;
+    z-index: 600;
 }
 
-.overlay #pillo1{
-            
-    background-color:#f234c6 ;
+#navmenu i{
+    font-size: 6vh;
+    position: absolute;
+    right: 10%;
+    top: 3.5%;
 }
 
-#pillo2{
-    background-color: #22adf8;
+#navmenu h4{
+    font-weight: 200;
+    border-bottom: solid 1px rgb(73, 73, 73) ;
+    padding-right: 8.5%;
+    margin: 1%;
 }
+
+
+
+
 
 #page1 #wrap{
     /* background-color: red; */
-    margin: 2.5% 5%;
+    margin: 3.5% 5%;
     width: 100%;
     position: relative;
     display: flex;
@@ -211,7 +226,7 @@ html , body{
              -z-animation: rainbow 10s ease infinite;
              -o-animation: rainbow 10s ease infinite;
                 animation: rainbow 10s ease infinite; */
-    background-color: rgb(187, 253, 120);
+    background-color: #CCEF92;
                 
      
        }
@@ -313,7 +328,7 @@ html , body{
     width: 100%;
     height: 12vh;
     z-index: -2;
-    background-color: rgb(187, 253, 120);
+    background-color: #CCEF92;
     position: absolute;
     height: 12vh;
     top: -110%;
@@ -330,7 +345,7 @@ html , body{
 
 
 #page2{
-    min-height: 100vh;
+    height: 100vh;
     width: 100vw;
     position: relative;
     border-top: 1px solid rgb(153, 153, 153) ;
@@ -338,14 +353,24 @@ html , body{
 
 #page2 h1{
     font-size: 12vh;
-    position: absolute;
+    /* position: absolute;
     transform: translateX(-50%);
     top: 10%;
-    left: 50%;
+    left: 50%; */
     font-family: head;
+    text-align: center;
+    margin-top: 5%;
     /* margin-top: 5%; */
 }
 
+
+#page2 h2{
+    font-size: 1.9vh;
+    font-weight: 200;
+    color: #6a6a6a;
+    text-align: center;
+
+}
 
 @keyframes infinitescroll{
     0%{
@@ -375,7 +400,7 @@ html , body{
     animation-iteration-count: infinite; */
     /* padding: -10% -10%; */
     position: absolute;
-    bottom: 10%;
+    bottom: 0%;
     overflow-y: hidden;
   
 }
@@ -455,7 +480,7 @@ html , body{
     }
 
     #wrap #wrapper1 h1{
-        font-size: 8vh;
+        font-size: 9vh;
         text-align: center;
     }
 
@@ -542,18 +567,24 @@ html , body{
         left: 50%; */
     }
 
+    #page2{
+        height: 75vh;
+        
+    }
+
     #loop2{
         display: flex;
         
-        height: 65vh;
-        position: absolute;
-        bottom: 1%;
+        height: 50vh;
+        /* position: absolute;
+        bottom: 15%; */
         overflow-y: hidden;
       
     }
 
     .tsh img{
         width: 46%;
+        margin: 1% 0;
     }
 
 

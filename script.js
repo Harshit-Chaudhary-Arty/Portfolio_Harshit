@@ -170,4 +170,37 @@ function videoconAnimation(){
 
 
   })
+
+
+  var navi=document.querySelector("#nav #nright i")
+  var navic=document.querySelector("#navmenu i")
+  navi.addEventListener("click", function(){
+    
+    navmenu()
+    
+    }
+  )
+
+    navic.addEventListener("click", function(){
+      
+      navmenuclose()
+      
+      }
+      
+    
+)
+
+var click=0;
+
+function navmenu(){
+    gsap.to("#navmenu",{
+        transform:"translateX(-40vw)",
+    })
+}
+
+function navmenuclose(){
+    gsap.to("#navmenu",{
+        transform:"translateX(40vw)",
+    })
+}
        
