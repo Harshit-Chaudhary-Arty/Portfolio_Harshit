@@ -3,6 +3,11 @@
     src: url(display.ttf);
 }
 
+@font-face {
+    font-family:head ;
+    src: url( Dirtyline36Daysoftype2022-Reg.ttf);
+}
+
 
 *{
     margin: 0;
@@ -80,7 +85,8 @@ html , body{
 }
 
 #page1 #wrapper1 h1{
-    font-size: 8vw;
+    font-size: 9vw;
+    font-family:head;
 }
 
 
@@ -197,14 +203,16 @@ html , body{
 }
 
 #pill1{
-    background-color: rgb(181, 255, 70);      background: linear-gradient(110deg,   #2b1de8,#1ddde8, #dd00f3, #dd00f3, #490079);
+    /* background-color: rgb(181, 255, 70);      background: linear-gradient(110deg,   #2b1de8,#1ddde8, #dd00f3, #dd00f3, #490079);
   
        background-size: 200% 200%;
      
         -webkit-animation: rainbow 10s ease infinite;
              -z-animation: rainbow 10s ease infinite;
              -o-animation: rainbow 10s ease infinite;
-                animation: rainbow 10s ease infinite;
+                animation: rainbow 10s ease infinite; */
+    background-color: rgb(187, 253, 120);
+                
      
        }
       
@@ -274,7 +282,7 @@ html , body{
 
 #wrapper2 h1{
     color: #1f1f1f;
-    margin: 5% 0;
+    margin-bottom: 8%;
     margin-left: 3%;
 
 }
@@ -322,7 +330,7 @@ html , body{
 
 
 #page2{
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     position: relative;
     border-top: 1px solid rgb(153, 153, 153) ;
@@ -334,6 +342,7 @@ html , body{
     transform: translateX(-50%);
     top: 10%;
     left: 50%;
+    font-family: head;
     /* margin-top: 5%; */
 }
 
@@ -357,19 +366,18 @@ html , body{
 
 #loop2{
     display: flex;
-    /* width: 100vw; */
+    
     height: 65vh;
-    /* background-color: red; */
-    /* overflow: hidden; */
-    animation-name: infinitescroll;
+  
+    /* animation-name: infinitescroll;
     animation-duration: 60s;
     animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    padding: -10% -10%;
+    animation-iteration-count: infinite; */
+    /* padding: -10% -10%; */
     position: absolute;
-    bottom: 0%;
-    /* background-color: yellowgreen; */
-    /* z-index: 200; */
+    bottom: 10%;
+    overflow-y: hidden;
+  
 }
 
 
@@ -461,11 +469,23 @@ html , body{
         margin-top: 5%;
     }
 
+    #wrapper2 h1{
+        margin-top: 5%;
+        margin-left: 13%;
+
+
+    }
+
     .elem{
         width: 100%;
         font-size: 2vh;
         height: 6vh;
         
+    }
+
+    .elem i{
+        margin-left: 30%;
+
     }
 
     .overlay2{
@@ -483,4 +503,32 @@ html , body{
        
     }
 
+}
+
+
+#page3{
+    min-height: 100vh;
+    width: 100vw;
+    /* background-color: black; */
+}
+
+#wrapper3{
+    margin:0 5%;
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: red; */
+    position: relative;
+}
+
+.tsh{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 1%;
+}
+.tsh img{
+    width: 24%;
+    border: 1px solid rgb(186, 186, 186);
+    border-radius: 10px;
 }

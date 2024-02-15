@@ -8,14 +8,15 @@ tl.from("#loader h1, #loader h2",{
     filter: "blur(9px)",
 })
 
-tl.to("#loader",{
-    y: 100,
+tl.to("#loader, #loader h1",{
+    y: 300,
     opacity:0,
     // blur:("60px"),
     duration:0.6,
-    filter: "blur(7px)",
+    filter: "blur(10px)",
     delay:0.7,
     display:"none",
+    
 })
 
 // tl.to("#loader",{
@@ -151,4 +152,22 @@ function videoconAnimation(){
   })
    
 
+  gsap.to("#loop2",{
+    transform:"translateX(-105%)",
+    duration:140,
+    repeat:-1,
+    // scrollTrigger:{
+    //   trigger:"#page2",
+    //   scroller:"body",
+    //   markers:true,
+    //   start:"top 0%",
+    //   end:"top 40%",
+    //   scrub:1
+    // }
+
+
+
+
+
+  })
        
