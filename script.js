@@ -240,4 +240,4 @@ function navmenuclose2(){
       transform:"translateX(100vw)",
   })
 }
-       
+  
