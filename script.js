@@ -14,10 +14,12 @@ tl.to("#loader, #loader h1",{
     // blur:("60px"),
     duration:0.6,
     filter: "blur(10px)",
-    delay:0.7,
+    delay:1.7,
     display:"none",
     
 })
+
+
 
 // tl.to("#loader",{
 //     y: 600,
@@ -46,6 +48,7 @@ tl.from(" #wrapper1 h1,#wrapper1 h2,#wrapper1 #spanh2",{
     filter: "blur(10px)",
 
 })
+
 
 
 function videoconAnimation(){

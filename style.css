@@ -61,11 +61,58 @@ html , body{
 }
 
 #loader h1{
-    position: absolute;
+    position: relative;
         transform: translate(-50%,-50%);
-        top: 45%;
+        top: 50%;
         left: 50%;
+        display: flex;
+        align-items: center;
 }
+
+#innerhello{
+    height: 5.5vw;
+    overflow: hidden;
+    /* background-color: #CCEF92; */
+    display: inline-block;
+}
+
+
+#innerhello span{
+    position: relative;
+    /* color: red; */
+    animation: animation 2.8s ease infinite;
+}
+
+@keyframes animation{
+    0%,
+    100% {
+        top: 0;
+    }
+    20%{
+        top: 0;
+    }
+    25%{
+        top: -6vw;
+    }
+    45%{
+        top: -6vw;
+    }
+    50%{
+        top: -12vw;
+    }
+    70%{
+        top: -12vw;
+
+    }
+    75%{
+        top: -18vw;
+    }
+    95%{
+        top: -18vw;
+    }
+
+}
+
 
 #loader h2{
     font-size: 1.2vw;
