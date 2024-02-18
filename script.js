@@ -203,4 +203,41 @@ function navmenuclose(){
         transform:"translateX(40vw)",
     })
 }
+
+
+
+
+
+
+var navic2=document.querySelector("#navmenu2 i")
+
+navi.addEventListener("click", function(){
+  
+  navmenu2()
+  
+  }
+)
+
+  navic2.addEventListener("click", function(){
+    
+    navmenuclose2()
+    
+    }
+    
+  
+)
+
+var click=0;
+
+function navmenu2(){
+  gsap.to("#navmenu2",{
+      transform:"translateX(-100vw)",
+  })
+}
+
+function navmenuclose2(){
+  gsap.to("#navmenu2",{
+      transform:"translateX(100vw)",
+  })
+}
        

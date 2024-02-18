@@ -178,11 +178,17 @@ html , body{
     top: 3.5%;
 }
 
-#navmenu h4{
-    font-weight: 200;
+#navmenu a{
+    font-weight: 100;
     border-bottom: solid 1px rgb(73, 73, 73) ;
     padding-right: 8.5%;
     margin: 1%;
+    text-decoration: none;
+    color: black;
+}
+
+#navmenu2{
+    display: none;
 }
 
 
@@ -191,7 +197,7 @@ html , body{
 
 #page1 #wrap{
     /* background-color: red; */
-    margin: 3.5% 5%;
+    margin: 2.5% 5%;
     width: 100%;
     position: relative;
     display: flex;
@@ -480,15 +486,18 @@ html , body{
     }
 
     #wrap #wrapper1 h1{
-        font-size: 9vh;
+        font-size: 9.8vh;
         text-align: center;
+        margin: 5% ;
+
     }
 
     #wrap #wrapper1 h2{
-        margin-top: 5%;
+        margin: 5% ;
         font-weight: 300;
-        font-size: 2.4vh;
+        font-size: 2vh;
         text-align: center;
+        
     }
 
     #page1 #wrap{
@@ -509,10 +518,12 @@ html , body{
 
 
     #spanh2{
+        margin: 0 5%;
         margin-top: 8.5%;
+
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-evenly;
     }
 
     .overlay{
@@ -523,6 +534,7 @@ html , body{
     #wrapper2{
         width: 100%;
         margin-top: 5%;
+        display: none;
     }
 
     #wrapper2 h1{
@@ -556,6 +568,7 @@ html , body{
     #page2 h1{
         font-size: 9vh;
         text-align: center;
+        margin-top: 10%;
        
     }
 
@@ -586,6 +599,45 @@ html , body{
         width: 46%;
         margin: 1% 0;
     }
+
+    #navmenu{
+        display: none;
+    }
+
+    #navmenu2{
+        
+        width: 100vw;
+        height: 100vh;
+        color: black;
+        background-color: #CCEF92;
+        font-size: 6vh;
+        position: fixed;
+        top: 0%;
+        left: 100%;
+        text-align: right;
+        display: flex;
+        flex-direction: column;
+        padding-top: 30%;
+        z-index: 600;
+    }
+
+    #navmenu2 i{
+        font-size: 6vh;
+        position: absolute;
+        right: 6%;
+        top: 1.5%;
+    }
+    
+    #navmenu2 a{
+        font-weight: 100;
+        border-bottom: solid 1px rgb(73, 73, 73) ;
+        padding: 3.5% ;
+        padding-right: 8.5%;
+
+        text-decoration: none;
+        color: black;
+    }
+
 
 
 }
