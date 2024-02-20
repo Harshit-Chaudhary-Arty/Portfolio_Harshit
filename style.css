@@ -524,7 +524,7 @@ html , body{
 }
 
 #wrapper3{
-    margin:0 5%;
+    margin:2% 5%;
     display: flex;
     flex-wrap: wrap;
     /* background-color: red; */
@@ -543,6 +543,56 @@ html , body{
     width: 24%;
     border: 1px solid rgb(186, 186, 186);
     border-radius: 10px;
+}
+
+
+#page4{
+    min-height: 100vh;
+    width: 100vw;
+    border-top: 1px solid rgb(153, 153, 153) ;
+
+}
+
+#page4 h2{
+    font-size: 1.9vh;
+    font-weight: 200;
+    color: #6a6a6a;
+    text-align: center;
+}
+
+#page4 h1{
+    font-size: 12vh;
+    font-family: head;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.line{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#wrapper4{
+    margin: 7.5% 5%;
+    /* background-color: #1f1f1f; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.img-cover{
+    width: 29vw;
+    /* background-color: red; */
+    position: relative;
+    margin: 2.5% 0;
+}
+
+.img-cover img{
+    /* height: 100%; */
+    width: 100%;
+    object-fit: cover;
 }
 
 
