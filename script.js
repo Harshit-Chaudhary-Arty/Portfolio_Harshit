@@ -35,6 +35,80 @@ locomotive()
 
 
 
+
+var navi=document.querySelector("#nav #nright i")
+var navic=document.querySelector("#navmenu i")
+navi.addEventListener("click", function(){
+    
+    navmenu()
+    
+    }
+  )
+
+    navic.addEventListener("click", function(){
+      
+      navmenuclose()
+      
+      }
+      
+    
+)
+
+var click=0;
+
+function navmenu(){
+    gsap.to("#navmenu",{
+        transform:"translateX(-40vw)",
+    })
+}
+
+function navmenuclose(){
+    gsap.to("#navmenu",{
+        transform:"translateX(40vw)",
+    })
+}
+
+
+
+
+
+
+var navic2=document.querySelector("#navmenu2 i")
+
+navi.addEventListener("click", function(){
+  
+  navmenu2()
+  
+  }
+)
+
+  navic2.addEventListener("click", function(){
+    
+    navmenuclose2()
+    
+    }
+    
+  
+)
+
+var click=0;
+
+function navmenu2(){
+  gsap.to("#navmenu2",{
+      transform:"translateX(-100vw)",
+  })
+}
+
+function navmenuclose2(){
+  gsap.to("#navmenu2",{
+      transform:"translateX(100vw)",
+  })
+}
+  
+
+
+
+
 var tl= gsap.timeline();
 
 tl.from("#loader h1, #loader h2",{
@@ -182,102 +256,35 @@ function videoconAnimation(){
 //     })
 
 
-  tl.from("#wrapper2 ,#wrapper2 .elem",{
-    opacity:0,
-    y:-50,
-    stagger: 0.2,
-    duration:0.7,
-    delay:-0.8,
-    filter: "blur(10px)",
-  })
+  // tl.from("#wrapper2 ,#wrapper2 .elem",{
+  //   opacity:0,
+  //   y:-50,
+  //   stagger: 0.2,
+  //   duration:0.7,
+  //   delay:-0.8,
+  //   filter: "blur(10px)",
+  // })
    
 
-  gsap.to("#loop2",{
-    transform:"translateX(-105%)",
-    duration:140,
-    repeat:-1,
-    // scrollTrigger:{
-    //   trigger:"#page2",
-    //   scroller:"body",
-    //   markers:true,
-    //   start:"top 0%",
-    //   end:"top 40%",
-    //   scrub:1
-    // }
-
-
-
-
-
-  })
-
-
-  var navi=document.querySelector("#nav #nright i")
-  var navic=document.querySelector("#navmenu i")
-  navi.addEventListener("click", function(){
-    
-    navmenu()
-    
-    }
-  )
-
-    navic.addEventListener("click", function(){
-      
-      navmenuclose()
-      
-      }
-      
-    
-)
-
-var click=0;
-
-function navmenu(){
-    gsap.to("#navmenu",{
-        transform:"translateX(-40vw)",
-    })
-}
-
-function navmenuclose(){
-    gsap.to("#navmenu",{
-        transform:"translateX(40vw)",
-    })
-}
-
-
-
-
-
-
-var navic2=document.querySelector("#navmenu2 i")
-
-navi.addEventListener("click", function(){
+  // gsap.to("#loop2",{
+  //   transform:"translateX(-105%)",
+  //   duration:140,
+  //   repeat:-1,
   
-  navmenu2()
-  
-  }
-)
+  //   // scrollTrigger:{
+  //   //   trigger:"#page2",
+  //   //   scroller:"body",
+  //   //   markers:true,
+  //   //   start:"top 0%",
+  //   //   end:"top 40%",
+  //   //   scrub:1
+  //   // }
 
-  navic2.addEventListener("click", function(){
-    
-    navmenuclose2()
-    
-    }
-    
-  
-)
 
-var click=0;
 
-function navmenu2(){
-  gsap.to("#navmenu2",{
-      transform:"translateX(-100vw)",
-  })
-}
 
-function navmenuclose2(){
-  gsap.to("#navmenu2",{
-      transform:"translateX(100vw)",
-  })
-}
-  
+
+  // })
+
+
+
