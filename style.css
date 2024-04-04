@@ -28,6 +28,27 @@ html , body{
     
 }
 
+
+/* svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+path{
+    fill: none;
+    stroke-width: 50;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+
+} */
+
+
+
+
 #pointer{
     height: 2.5vh;
     width:2.5vh;
@@ -41,6 +62,8 @@ html , body{
 
     
 }
+
+
 
 #pointer i{
     color: white;
@@ -361,10 +384,16 @@ html , body{
  #i4{
     height: 33%;
     margin-top: 3%;
+    
  }
 
  #i5{
     height: 100%;
+    
+ }
+
+ #i6{
+    height: 50%;
     
  }
 
@@ -753,7 +782,7 @@ html , body{
 #right5 .step h1{
    margin-top: 28%;
     font-family:display;
-    font-size: 7vh;
+    font-size: 6.5vh;
 
 }
 
@@ -762,7 +791,7 @@ html , body{
     padding: 12%;
     padding-top: 4.5%;
     z-index: 15;
-    font-size: large;
+    font-size: 90%;
 }
 
 .no{
@@ -853,7 +882,7 @@ html , body{
 }
 
 #line1 #l4{
-    filter: invert(1);
+    /* filter: invert(1); */
     height:50%;
 
 }
@@ -870,10 +899,26 @@ html , body{
 }
 
 #line2 img{
-    filter: invert(1);
+    
     height:50%;
 }
 
+#line2 #l4{
+    filter: invert(1);
+    height:50%;
+
+}
+
+
+#line2 #l5{
+    scale: 1.6;
+
+}
+
+#line2 #l6{
+    scale:0.8;
+
+}
 
 @media screen and (max-width:720px) {
     #loader h1{

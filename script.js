@@ -34,6 +34,56 @@ locomotive()
 
 
 
+// const trails= document.querySelectorAll(".trial");
+// const smoothPointer={
+//   x: window.innerWidth / 2,
+//   y: window.innerHeight / 2,
+
+// };
+// const totalPointsArray = [40,35,30,25,20,15];
+
+// window.addEventListener("mousemove", (event)=> {
+//   gsap.to(smoothPointer,{
+
+//     x:event.clientX,
+//     y:event.clientY,
+//     duration:0.5,
+//     ease:"power2.out"
+//   });
+// });
+
+// function updatePath() {
+//   trails.forEach((path,index) =>{
+
+
+
+//     let points= path.points || [];
+//     points.unshift({ ...smoothPointer });
+//     while (points.length > totalPointsArray[index]) {
+
+//       points.pop()
+//     }
+//     path.points=points;  
+
+//     if( points.length > 1){
+
+//       let d= `M ${points[0].x} ${points[0].y}`;
+//       for (let i=1; i < points.length; i++){
+//         d += ` L ${points[i].x}  ${points[i].y}`;
+//       }
+//       path.setAttribute("d", d);
+//     }
+//   });
+
+//   requestAnimationFrame(updatePath);
+// }
+
+// updatePath();
+
+
+
+
+
 
 
 var navi=document.querySelector("#nav #nright i")
@@ -150,13 +200,22 @@ tl.from("#nav,#nav #nleft",{
     filter: "blur(10px)",
 
 })
+
 tl.from(" #wrapper1 h1,#wrapper1 h2,#wrapper1 #spanh2",{
     opacity:0,
     y:-50,
     stagger: 0.3,
     duration:0.7,
-    delay:-0.8,
+    delay:-0.6,
     filter: "blur(10px)",
+
+})
+tl.from(" #wrapper1  #imgwrap img",{
+  opacity:0,
+  y:-80,
+  delay:0,
+  duration:0.9,
+  filter: "blur(50px)",
 
 })
 
@@ -285,6 +344,7 @@ function videoconAnimation(){
 
 
   // })
+
 
 
 
