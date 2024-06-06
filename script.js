@@ -233,8 +233,8 @@ function videoconAnimation(){
     })
     videocon.addEventListener("mousemove",function(dets){
       gsap.to(pointer,{
-          left:dets.x+20,
-          top:dets.y+30,
+          left:dets.x,
+          top:dets.y,
       })
     })
 
@@ -344,6 +344,8 @@ function videoconAnimation(){
 
 
   // })
+
+
 
 
 

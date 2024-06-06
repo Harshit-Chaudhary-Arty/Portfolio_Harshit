@@ -14,6 +14,11 @@
     src: url(STRRETCH\ SANS\ 400.otf);
 }
 
+@font-face {
+    font-family:inter ;
+    src: url(Inter-Medium.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -25,6 +30,7 @@ html , body{
     font-family: display;
     overflow-x: hidden;
     background-color: #f0f0f0;
+    overflow-x: hidden;
     
 }
 
@@ -59,6 +65,7 @@ path{
     display: flex;
     align-self: center;
     flex-wrap: wrap;
+    pointer-events: none;
 
     
 }
@@ -167,9 +174,17 @@ path{
     font-family:head;
 }
 
-#page1{
-   /* background-color: #ebebeb; */
-}
+/* @media (max-width: 479px) {
+    #page1 #wrapper1 h1{
+       font-size: 1px;
+       
+       font-family:head;
+       /* color: red; */
+  
+
+/* #page1{
+   background-color: #ebebeb;
+} */
 
 
 #page1 #nav{
@@ -324,6 +339,13 @@ path{
     display: flex;
 }
 
+#wrapper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+}
 
 
 #wrapper1{
@@ -332,7 +354,10 @@ path{
     align-items: center;
     flex-direction: column;
     text-align: center;
+    
 }
+
+
 #wrapper1 h2{
     width: 60%;
     margin-top: 0.8%;
@@ -601,7 +626,8 @@ path{
     animation-name: infinitescroll;
     animation-duration: 60s;
     animation-timing-function: linear;
-    animation-iteration-count: infinite; */
+    animation-iteration-count: infinite; 
+}
     /* padding: -10% -10%;
     position: absolute;
     bottom: 0%;
@@ -615,8 +641,8 @@ path{
 #page3{
     min-height: 100vh;
     width: 100vw;
-    /* background-color: black; */
-}
+    /* background-color: black;} */
+
 
 #wrapper3{
     margin:2% 5%;
@@ -944,7 +970,7 @@ path{
     }
 
     #nav #nleft{
-        font-size: 1.5vh;
+        font-size: 1.2vh;
     }
 
     #nav #nright{
@@ -960,20 +986,28 @@ path{
     #wrapper1{
         width: 100%;
         align-items: center;
+        position: absolute;
+        transform: translateX(-50%);
+        left: 55%;
     }
 
     #wrap #wrapper1 h1{
-        font-size: 9.8vh;
+        font-size: 7.9vh;
         text-align: center;
         margin: 5% ;
-
+        margin-top: 10%;
+        margin-bottom: .1%;
     }
 
     #wrap #wrapper1 h2{
-        margin: 5% ;
+        /* margin: 5% ; */
         font-weight: 300;
-        font-size: 2vh;
+        font-size: 1.3vh;
         text-align: center;
+        width: 84%;
+        margin-top: 1%;
+        margin-bottom: 5%;
+        color: #5a5a5a;
         
     }
 
@@ -982,7 +1016,71 @@ path{
         margin: 8.5% 0%  ;
         display: flex;
         flex-wrap: wrap;
+        margin-top: 10%;
     }
+
+
+    #imgwrap{
+        height: 50vh;
+       display: flex;
+       width: 220vw;
+       flex-wrap: nowrap;
+       margin-top: 4%;
+       animation-name: infinitescroll;
+        animation-duration: 60s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    
+    } 
+    #imgwrap img{
+        display: inline-block;
+        padding: 0.8%;
+     
+     } 
+    #i1{
+        height: 100%;
+        /* margin-left: 10%; */
+    }
+    
+     #i2{
+        height: 100%;
+     }
+    
+     #i3{
+        height: 65%;
+        
+     }
+    
+     #i4{
+        height: 33%;
+        margin-top: 3%;
+        
+     }
+    
+     #i5{
+        height: 100%;
+        
+     }
+    
+     #i6{
+        height: 50%;
+        
+     }
+
+     #iiwrap{
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 30.5%;
+        /* background-color: red; */
+        /* padding: 0.7%; */
+        margin-right: .8%;
+    
+    }
+
+
 
     .pill{
         border-radius: 50px;
@@ -1050,7 +1148,8 @@ path{
     }
 
     #loop2 img{
-        height: 45vh;
+        height: 35vh;
+        margin-left: -5%;
         /* position: relative;
         transform: translateX(-50%);
         top: -50%;
@@ -1058,17 +1157,18 @@ path{
     }
 
     #page2{
-        height: 75vh;
+        height: 65vh;
         
     }
 
     #loop2{
         display: flex;
         
-        height: 50vh;
+        height: 40vh;
+        margin-top:5%;
         /* position: absolute;
         bottom: 15%; */
-        overflow-y: hidden;
+        /* overflow-y: hidden; */
       
     }
 
@@ -1115,7 +1215,15 @@ path{
         color: black;
     }
 
+    #page4 h1{
+        font-size: 9vh;
+        margin-top: 15%;
+    }
 
+    #page4 h2{
+        font-size: 1.4vh;
+        /* margin-top: 15%; */
+    }
 
 }
 
