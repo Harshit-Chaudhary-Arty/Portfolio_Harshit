@@ -749,7 +749,7 @@ path{
 }
 
 #page5 h1{
-    font-size: 12vh;
+    /* font-size: 12vh; */
     font-family: head;
     text-align: center;
     margin-top: 4%;
@@ -946,6 +946,8 @@ path{
 
 }
 
+
+
 @media screen and (max-width:720px) {
     #loader h1{
         position: absolute;
@@ -992,11 +994,12 @@ path{
     }
 
     #wrap #wrapper1 h1{
-        font-size: 7.9vh;
+        font-size: 8.8vh;
         text-align: center;
         margin: 5% ;
         margin-top: 10%;
         margin-bottom: .1%;
+        margin-left: 6%;
     }
 
     #wrap #wrapper1 h2{
@@ -1284,6 +1287,128 @@ path{
         
     }
 
+
+
+    /* page5 */
+
+
+    #page5{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        height: 200vh;
+    }
+
+    #page5 h1{
+        /* display: none; */
+    }
+
+    #headpage5{
+        padding-top: 10%;
+        font-size: 9vh;
+        /* color: red; */
+    }
+   
+    #headsmall{
+        display: none;
+    }
+    
+    #page5 h2{
+        font-size: 1.6vh;
+        font-weight: 200;
+        color: #5f5f5f;
+        text-align: center;
+        transition: 0.3s;
+    
+    }
+    
+    #right5{
+        
+        width: 100vw;
+        height: 165vh;
+        /* background-color: red;  */
+        color: #8b8b8b;
+        gap: 2.5% ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        
+    }
+    
+    #right5 .step{
+        width: 90%;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        background-color:#141414;
+        padding-top: 2%;
+        border-radius: 5%;
+        position: relative;
+    }
+    
+
+    
+    #right5 .step h1{
+       margin-top: 34%;
+        font-family:display;
+        font-size: 5vh;
+        z-index: 15;
+        transition: 0.3s;
+    
+    }
+    
+    
+    #right5 .step h2{
+        padding: 12%;
+        padding-top: 4.5%;
+        z-index: 15;
+        font-size: 90%;
+    }
+    
+    .no{
+        color:#1c1c1c;
+        margin-bottom: 2%;
+        font-size: 13vh;
+        font-weight: 600;
+       text-align: left;
+       position: absolute;
+       transform: translate(-50%,-50%);
+       left: 50%;
+        top:20%;
+        z-index: 10;
+        transition: 0.2s;
+    }
+    
+    #right5 .step:hover{
+        background-color: #111111;
+       color: #575757;
+       transition: 0.3s;
+    }
+    
+    #right5 .step:hover .no{
+        color: #656565;
+      transition: 0.3s;
+      font-size: 13.4vh;
+    }
+    
+    #right5 .step:hover h1{
+        color: #c1c1c1;
+        transition: 0.3s;
+        font-size: 7.2vh;
+    
+     }
+    
+     #right5 .step:hover h2{
+        color: #b2b2b2;
+        transition: 0.3s;
+        font-weight: 400;
+        
+     }
+    
    
 
 }
