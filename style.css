@@ -1225,5 +1225,49 @@ path{
         /* margin-top: 15%; */
     }
 
+
+    #wrapper4{
+       
+    margin: 1% 1%;
+    margin-top: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    }
+
+
+    .line{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        /* background-color: red; */
+        width: 32.6%;
+        margin-bottom: 20%;
+    }
+   
+    .img-cover{
+        width: 100%;
+        /* background-color: red; */
+        position: relative;
+        margin: 0.2% 0;
+    }
+    
+    .img-cover img{
+        /* height: 100%; */
+        width: 100%;
+        object-fit: cover;
+    }
+    
+
+
+
+
+
+
+
+
 }
+
+
 
