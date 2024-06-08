@@ -1039,7 +1039,7 @@ path{
      } 
     #i1{
         height: 100%;
-        /* margin-left: 10%; */
+        padding-left: 0%;
     }
     
      #i2{
@@ -1076,7 +1076,8 @@ path{
         width: 30.5%;
         /* background-color: red; */
         /* padding: 0.7%; */
-        margin-right: .8%;
+        margin-right: 0%;
+        padding-right: 0%;
     
     }
 
@@ -1265,12 +1266,25 @@ path{
     }
     
 
+
+    #loader h1{
+        display: none;
+    }
+    
     
 
+    #loader h2{
+        font-size: 4vw;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        top: 50%;
+        left: 50%;
+        font-weight: 200;
+        color: #6a6a6a;
+        
+    }
 
-
-
-
+   
 
 }
 
