@@ -721,7 +721,7 @@ path{
     flex-wrap: wrap;
     white-space: nowrap;
     /* flex-wrap: wrap; */
-    min-width: 650vh;
+    min-width: 650vw;
     padding: 1%;
     font-size: 7vh;
     font-family: stretchy;
@@ -1260,7 +1260,12 @@ path{
     }
     
 
+    #more{
+        font-size: 4vh;
+    }
+    
 
+    
 
 
 
